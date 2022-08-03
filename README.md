@@ -2,7 +2,13 @@
 
 Repositório focado para turma de POO - Cesmac - 2022.2
 
-[IntelliJ Download](https://www.jetbrains.com/pt-br/idea/download/#section=windows)
+## Links úteis
+- [IntelliJ Download](https://www.jetbrains.com/pt-br/idea/download/#section=windows)
+- [Java Doc - JDK 18](https://docs.oracle.com/en/java/javase/18/)
+- 2Devs Podcast:
+  - [SimpleCast](https://2devs.simplecast.com/)
+  - [Spotify](https://open.spotify.com/show/5PhTDolt2xc9gne9AAUaPL)
+
 
 ## Como serão distribuídas as notas
 
