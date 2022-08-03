@@ -33,8 +33,8 @@ Repositório focado para turma de POO - Cesmac - 2022.2
 1. Abrir IntelliJ -> Menu inferior - Terminal
 2. Você irá baixar o projeto utilizando um comando do git. Executar no terminal:
   - `git clone https://github.com/rachidcalazans/cesmac-poo-2022-2.git`
-3. Menu superior VScode - Arquivo -> Abrir pasta -> selecionar a pasta que você acabou de baixar
-4. Pronto, você estará com o projeto aberto no VScode
+3. Ao abrir o IntelliJ novamente, clicar em Abrir-> selecionar a pasta que você acabou de baixar
+4. Pronto, você estará com o projeto aberto no IntelliJ
 
 ### Atualizando o projeto
 
