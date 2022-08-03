@@ -30,16 +30,16 @@ Repositório focado para turma de POO - Cesmac - 2022.2
 
 ### Baixando o projeto pela primeira vez
 
-1. Abrir VScode -> Menu superior - Terminal -> Novo Terminal
+1. Abrir IntelliJ -> Menu inferior - Terminal
 2. Você irá baixar o projeto utilizando um comando do git. Executar no terminal:
-  - `git clone https://github.com/rachidcalazans/cesmac-lp-ii-2022-2.git`
+  - `git clone https://github.com/rachidcalazans/cesmac-poo-2022-2.git`
 3. Menu superior VScode - Arquivo -> Abrir pasta -> selecionar a pasta que você acabou de baixar
 4. Pronto, você estará com o projeto aberto no VScode
 
 ### Atualizando o projeto
 
-1. Abrir o VScode na pasta do projeto
-2. Menu superior - Terminal -> Novo Terminal
+1. Abrir IntelliJ
+2. Menu inferior - Terminal
 3. Comando para ir para a `branch` principal:
   - `git checkout main`
 4. Comando para atualizar a `branch` principal com atualizações que estão no Github:
@@ -49,8 +49,8 @@ Repositório focado para turma de POO - Cesmac - 2022.2
 
 ### Criando uma nova branch para fazer os exercícios/provas etc
 
-1. Abrir o VScode na pasta do projeto
-2. Menu superior - Terminal -> Novo Terminal
+1. Abrir IntelliJ
+2. Menu inferior - Terminal
 3. Comando para verificar em qual `branch` você está:
   - `git branch`
   - Deverá mostrar `main`, caso contrário, execute o seguinte código para ir para a branch `main`:
@@ -64,8 +64,8 @@ Repositório focado para turma de POO - Cesmac - 2022.2
 
 ### Subindo o código da sua nova branch para o Github
 
-1. Abrir o VScode na pasta do projeto
-2. Menu superior - Terminal -> Novo Terminal
+1. Abrir IntelliJ
+2. Menu inferior - Terminal
 3. Comando para verificar o status do seu código. Deverá mostrar em vermelho tudo que não está pronto para ser enviado
   - `git status`
 4. Comando para adicionar tudo que você fez para deixar pronto para ser enviado
