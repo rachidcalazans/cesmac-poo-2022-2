@@ -5,3 +5,4 @@
 2. Crie um novo Pull Request
 
 ## [Lucas Gabriel Santos Fidelis] [2113971793]
+## [João Victor Pimentel de Lira Cavalcante] [2113971791]
