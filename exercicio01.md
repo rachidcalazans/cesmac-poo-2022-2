@@ -4,4 +4,4 @@
 2. Atualize esse arquivo com seu nome completo e número de matrícula
 2. Crie um novo Pull Request
 
-## [Lucas Gabriel Santos Fidelis] [2113971793]
+## [Nome do Aluno] [Matrícula]
