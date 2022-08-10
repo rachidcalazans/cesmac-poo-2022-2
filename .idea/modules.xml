@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/cesmac-poo-2022-2.iml" filepath="$PROJECT_DIR$/cesmac-poo-2022-2.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/.idea/cesmac-poo-2022-2.iml" filepath="$PROJECT_DIR$/.idea/cesmac-poo-2022-2.iml" />
->>>>>>> 45fd6cd45efad29d3d187a5b1fc3cd183f0e50d0
     </modules>
   </component>
 </project>
