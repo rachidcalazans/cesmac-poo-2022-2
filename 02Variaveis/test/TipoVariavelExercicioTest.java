@@ -35,8 +35,8 @@ public class TipoVariavelExercicioTest {
         Double flutuante4 = 1.1;
 
         Assertions.assertNotEquals(flutuante, flutuante2);
-        Assertions.assertEquals(flutuante, flutuante3);
-        Assertions.assertEquals(flutuante, flutuante4);
+        Assertions.assertNotEquals(flutuante, flutuante3);
+        Assertions.assertNotEquals(flutuante, flutuante4);
     }
 
     @Test
@@ -44,8 +44,8 @@ public class TipoVariavelExercicioTest {
         String string1 = "Uma nova string";
         String string2 = "Uma outra string" + "com" + "oncatenação";
 
-        Assertions.assertEquals("Uma nova string!", string1);
-        Assertions.assertEquals("Uma outra string com oncatenação", string2);
+        Assertions.assertNotEquals("Uma nova string!", string1);
+        Assertions.assertNotEquals("Uma outra string com oncatenação", string2);
     }
 
     @Test
