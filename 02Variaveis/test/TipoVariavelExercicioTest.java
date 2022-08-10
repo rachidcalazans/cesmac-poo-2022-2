@@ -7,8 +7,8 @@ import java.util.List;
 public class TipoVariavelExercicioTest {
     @Test
     void exercicio01() {
-        boolean boolean1 = false;
-        Boolean boolean2 = true;
+        boolean boolean1 = true;
+        Boolean boolean2 = false;
 
         Assertions.assertEquals(true, boolean1);
         Assertions.assertEquals(false, boolean2);
@@ -18,7 +18,7 @@ public class TipoVariavelExercicioTest {
 
     @Test
     void exercicio02() {
-        int inteiro = 2;
+        int inteiro = 3;
         Integer inteiro2 = 3;
 
         Assertions.assertEquals(inteiro, inteiro2);
@@ -28,11 +28,11 @@ public class TipoVariavelExercicioTest {
 
     @Test
     void exercicio03() {
-        float flutuante = 1.1f;
-        Float flutuante2 = 1.0F;
+        float flutuante = 1.0f;
+        float flutuante2 = 1.1F;
 
         double flutuante3 = 1.0;
-        Double flutuante4 = 1.1;
+        double flutuante4 = 1.0;
 
         Assertions.assertNotEquals(flutuante, flutuante2);
         Assertions.assertEquals(flutuante, flutuante3);
@@ -41,8 +41,8 @@ public class TipoVariavelExercicioTest {
 
     @Test
     void exercicio04() {
-        String string1 = "Uma nova string";
-        String string2 = "Uma outra string" + "com" + "oncatenação";
+        String string1 = "Uma nova string!";
+        String string2 = "Uma outra string" + " com " + "oncatenação";
 
         Assertions.assertEquals("Uma nova string!", string1);
         Assertions.assertEquals("Uma outra string com oncatenação", string2);
@@ -50,9 +50,9 @@ public class TipoVariavelExercicioTest {
 
     @Test
     void exercicio05() {
-        int[] intArray = new int[4];
+        int[] intArray = new int[2];
 
-        String nomes[] = {"Zé", "Roberto", "Mara", "Joana"};
+        String nomes[] = {"Zé", "Roberto", "Maria", "Joana"};
 
         Assertions.assertEquals(2, intArray.length);
 
@@ -60,7 +60,7 @@ public class TipoVariavelExercicioTest {
         Assertions.assertEquals("Zé", nomes[0]);
         Assertions.assertEquals("Roberto", nomes[1]);
         Assertions.assertEquals("Maria", nomes[2]);
-        Assertions.assertEquals("Joana", nomes[4]);
+        Assertions.assertEquals("Joana", nomes[3]);
 
         List<String> nomes2 = new ArrayList<String>() {
             {
