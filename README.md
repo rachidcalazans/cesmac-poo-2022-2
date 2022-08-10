@@ -86,3 +86,28 @@ Repositório focado para turma de POO - Cesmac - 2022.2
 5. Coloque uma descrição do Pull Request
 6. Clique no botão  "Criar Pull Request"
 7. Pronto, agora seu Pull Request foi criado e poderá ser revisado por outros desenvolvedores
+
+## Setup
+
+1. Adicionar o JDK no projeto
+   - Ele é responsável por compilar o código em Java
+   - ![img.png](img.png)
+   - ![img_1.png](img_1.png)
+   - Selecionar o JDK versão 18
+   - ![img_2.png](img_2.png)
+2. Toda pasta de `test` deverá ser marcada como `Tests Source Root`
+   1. ![img_3.png](img_3.png)
+   2. Clicar com botão direito e marcar como `Tests Source Root`
+   3. ![img_4.png](img_4.png)
+
+Após o ruby instalado, execute:
+
+- `gem install bundler`
+- `bundle install`
+
+## Executar os testes
+
+No terminal execute o seguinte comando:
+
+- `ruby -Ilib:test {pasta_da_aula}/test/{arquivo_test.rb}`
+- Exemplo real: `ruby -Ilib:test 01_ruby_e_testes/test/test_minitest.rb`
