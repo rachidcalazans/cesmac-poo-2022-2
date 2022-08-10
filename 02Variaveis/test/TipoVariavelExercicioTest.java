@@ -10,8 +10,8 @@ public class TipoVariavelExercicioTest {
         boolean boolean1 = false;
         Boolean boolean2 = true;
 
-        Assertions.assertEquals(true, boolean1);
-        Assertions.assertEquals(false, boolean2);
+        Assertions.assertEquals(false, boolean1);
+        Assertions.assertEquals(true, boolean2);
 
         Assertions.assertNotEquals(boolean1, boolean2);
     }
@@ -21,9 +21,9 @@ public class TipoVariavelExercicioTest {
         int inteiro = 2;
         Integer inteiro2 = 3;
 
-        Assertions.assertEquals(inteiro, inteiro2);
+        Assertions.assertNotEquals(inteiro, inteiro2);
         Assertions.assertEquals(inteiro2, inteiro2.intValue());
-        Assertions.assertEquals(String.valueOf(inteiro), inteiro2.toString());
+        Assertions.assertNotEquals(String.valueOf(inteiro), inteiro2.toString());
     }
 
     @Test
