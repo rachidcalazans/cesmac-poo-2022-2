@@ -91,23 +91,18 @@ Repositório focado para turma de POO - Cesmac - 2022.2
 
 1. Adicionar o JDK no projeto
    - Ele é responsável por compilar o código em Java
-   - ![img.png](img.png)
-   - ![img_1.png](img_1.png)
+   - ![img.png](imgs/img.png)
+   - ![img_1.png](imgs/img_1.png)
    - Selecionar o JDK versão 18
-   - ![img_2.png](img_2.png)
+   - ![img_2.png](imgs/img_2.png)
 2. Toda pasta de `test` deverá ser marcada como `Tests Source Root`
-   1. ![img_3.png](img_3.png)
+   1. ![img_3.png](imgs/img_3.png)
    2. Clicar com botão direito e marcar como `Tests Source Root`
-   3. ![img_4.png](img_4.png)
-
-Após o ruby instalado, execute:
-
-- `gem install bundler`
-- `bundle install`
-
-## Executar os testes
-
-No terminal execute o seguinte comando:
-
-- `ruby -Ilib:test {pasta_da_aula}/test/{arquivo_test.rb}`
-- Exemplo real: `ruby -Ilib:test 01_ruby_e_testes/test/test_minitest.rb`
+   3. ![img_4.png](imgs/img_4.png)
+3. Para adicionar o JUnit - framework de teste
+   1. Se no teste o `@Test` ou `Assertions.assertEquals` em vermelho, significa que o JUnit ainda não foi importado ou adicionado no projeto
+   2. ![img_5.png](imgs/img_5.png)
+   3. Clicar na lâmpada vermelha e selecionar a opção para adicionar o JUnit 5.8.1 no classpath
+   4. ![img_6.png](imgs/img_6.png)
+   5. Lembrar de marcar para fazer o Download
+   6. ![img_7.png](imgs/img_7.png)
