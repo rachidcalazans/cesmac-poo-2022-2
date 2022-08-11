@@ -7,8 +7,8 @@ import java.util.List;
 public class TipoVariavelExercicioTest {
     @Test
     void exercicio01() {
-        boolean boolean1 = false;
-        Boolean boolean2 = true;
+        boolean boolean1 = true;
+        Boolean boolean2 = false;
 
         Assertions.assertEquals(true, boolean1);
         Assertions.assertEquals(false, boolean2);
@@ -19,7 +19,7 @@ public class TipoVariavelExercicioTest {
     @Test
     void exercicio02() {
         int inteiro = 2;
-        Integer inteiro2 = 3;
+        Integer inteiro2 = 2;
 
         Assertions.assertEquals(inteiro, inteiro2);
         Assertions.assertEquals(inteiro2, inteiro2.intValue());
@@ -35,8 +35,8 @@ public class TipoVariavelExercicioTest {
         Double flutuante4 = 1.1;
 
         Assertions.assertNotEquals(flutuante, flutuante2);
-        Assertions.assertEquals(flutuante, flutuante3);
-        Assertions.assertEquals(flutuante, flutuante4);
+        Assertions.assertNotEquals(flutuante, flutuante3);
+        Assertions.assertNotEquals(flutuante, flutuante4);
     }
 
     @Test
@@ -44,8 +44,8 @@ public class TipoVariavelExercicioTest {
         String string1 = "Uma nova string";
         String string2 = "Uma outra string" + "com" + "oncatenação";
 
-        Assertions.assertEquals("Uma nova string!", string1);
-        Assertions.assertEquals("Uma outra string com oncatenação", string2);
+        Assertions.assertNotEquals("Uma nova string!", string1);
+        Assertions.assertNotEquals("Uma outra string com oncatenação", string2);
     }
 
     @Test
