@@ -3,15 +3,15 @@ import org.junit.jupiter.api.Assertions; // Libera métodos para assertividades 
 import org.junit.jupiter.api.Test; // Libera métodos gerais para testes, assim como a anotação `@Test`
 
 public class JunitTest {
-    @Test // Anotação necessária para poder o método abaixo ser considerado um método de Teste
+    @Test
     void primeiroTesteSucesso() {
-        // primeiro é a expectativa
-        // segundo é o resultado
-        Assertions.assertEquals(true, 1 == 1);
+        String nome = "Gustavo";
+        Assertions.assertEquals("Gustavo", nome);
     }
 
     @Test
     void segundoTesteFalha() {
-        Assertions.assertEquals(true, 1 == 2);
+        String nome = "Gusavo"
+        Assertions.assertEquals("Gustavo", nome);
     }
 }
