@@ -20,7 +20,6 @@ public class TipoVariavelExercicioTest {
     void exercicio02() {
         int inteiro = 2;
         Integer inteiro2 = 3;
-
         Assertions.assertNotEquals(inteiro, inteiro2);
         Assertions.assertEquals(inteiro2, inteiro2.intValue());
         Assertions.assertNotEquals(String.valueOf(inteiro), inteiro2.toString());
@@ -35,8 +34,8 @@ public class TipoVariavelExercicioTest {
         Double flutuante4 = 1.1;
 
         Assertions.assertNotEquals(flutuante, flutuante2);
-        Assertions.assertEquals(flutuante, flutuante3);
-        Assertions.assertEquals(flutuante, flutuante4);
+        Assertions.assertNotEquals(flutuante, flutuante3);
+        Assertions.assertNotEquals(flutuante, flutuante4);
     }
 
     @Test
@@ -44,8 +43,8 @@ public class TipoVariavelExercicioTest {
         String string1 = "Uma nova string";
         String string2 = "Uma outra string" + "com" + "oncatenação";
 
-        Assertions.assertEquals("Uma nova string!", string1);
-        Assertions.assertEquals("Uma outra string com oncatenação", string2);
+        Assertions.assertNotEquals("Uma nova string!", string1);
+        Assertions.assertNotEquals("Uma outra string com oncatenação", string2);
     }
 
     @Test
@@ -54,28 +53,28 @@ public class TipoVariavelExercicioTest {
 
         String nomes[] = {"Zé", "Roberto", "Mara", "Joana"};
 
-        Assertions.assertEquals(2, intArray.length);
+        Assertions.assertNotEquals(2, intArray.length);
 
         Assertions.assertEquals(4, nomes.length);
         Assertions.assertEquals("Zé", nomes[0]);
         Assertions.assertEquals("Roberto", nomes[1]);
-        Assertions.assertEquals("Maria", nomes[2]);
-        Assertions.assertEquals("Joana", nomes[4]);
+        Assertions.assertEquals("Mara", nomes[2]);
+        Assertions.assertEquals("Joana", nomes[3]);
 
         List<String> nomes2 = new ArrayList<String>() {
             {
                 add("Zé");
             }
         };
-        Assertions.assertEquals(2, nomes2.size());
+        Assertions.assertEquals(1, nomes2.size());
         Assertions.assertEquals("Zé", nomes2.get(0));
-        Assertions.assertEquals("Roberto", nomes2.get(1));
+        Assertions.assertNotEquals("Roberto", nomes2.get(0));
 
         List<String> nomes3 = new ArrayList<String>();
         nomes3.add("Maria");
 
-        Assertions.assertEquals(2, nomes3.size());
-        Assertions.assertEquals("Maria", nomes3);
-        Assertions.assertEquals("Joana", nomes3);
+        Assertions.assertEquals(1, nomes3.size());
+        Assertions.assertNotEquals("Maria", nomes3);
+        Assertions.assertNotEquals("Joana", nomes3);
     }
 }
