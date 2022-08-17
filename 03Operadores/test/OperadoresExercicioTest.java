@@ -9,11 +9,12 @@ public class OperadoresExercicioTest {
     @Test
     void exercicio01() {
         int i1 = 1, i2 = 2;
+        int i3 = 4;
 
-        Assertions.assertEquals(4, i1 + i2);
-        Assertions.assertEquals(0.5, i2 - i1);
-        Assertions.assertEquals(-2, i2 * i1);
-        Assertions.assertEquals(5, i1 / i2);
+        Assertions.assertEquals(4, i2 + i2);
+        Assertions.assertEquals(0.5, i2 / i2 / (double)i2);
+        Assertions.assertEquals(-2, i2 * i1 - i3);
+        Assertions.assertEquals(5, i3 + i1);
         Assertions.assertEquals(0.5, i1 / (double)i2);
     }
 
