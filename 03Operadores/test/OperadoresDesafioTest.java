@@ -16,7 +16,7 @@ public class OperadoresDesafioTest {
 
     @Test
     void soma() {
-        Assertions.assertEquals(2, calculadora(1, 1, "+"));
+        Assertions.assertEquals(0, calculadora(0, 0, "+"));
     }
 
     @Test
@@ -24,7 +24,7 @@ public class OperadoresDesafioTest {
     }
 
     @Test
-    void multiplicacao() {
+    void multiplicacao() {Assertions.assertEquals(0, calculadora(10, 0, "*"));
     }
 
     @Test
@@ -32,7 +32,7 @@ public class OperadoresDesafioTest {
     }
 
     @Test
-    void divisao() {
+    void divisao() {Assertions.assertEquals(0, calculadora(1, 2, "/"));
     }
 
     @Test
