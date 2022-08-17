@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class OperadoresDesafioTest {
-    // Desafio
+    // Desafio1
     // Vale 1.5 pontos válido se criar PR até 17/08/2022 23:59:59
     // Implementar o método #calculadora
     // Adicionar assert_equal para cada método de teste com seu respectivo operador
