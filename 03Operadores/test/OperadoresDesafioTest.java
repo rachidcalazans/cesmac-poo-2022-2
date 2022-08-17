@@ -16,26 +16,31 @@ public class OperadoresDesafioTest {
 
     @Test
     void soma() {
-        Assertions.assertEquals(2, calculadora(1, 1, "+"));
+        Assertions.assertEquals(0, calculadora(0, 0, "+"));
     }
 
     @Test
     void subtracao() {
+        Assertions.assertEquals(0, calculadora(0, 0, "-"));
     }
 
     @Test
     void multiplicacao() {
+        Assertions.assertEquals(0, calculadora(0, 0, "*"));
     }
 
     @Test
     void potencia() {
+        Assertions.assertEquals(0, calculadora(0, 0, "**"));
     }
 
     @Test
     void divisao() {
+        Assertions.assertEquals(0, calculadora(0, 0, "/"));
     }
 
     @Test
     void modulo() {
+        Assertions.assertEquals(0, calculadora(0, 0, "%"));
     }
 }
