@@ -31,16 +31,16 @@ public class OperadoresDesafioTest {
 
     @Test
     void potencia() {
-
+        Assertions.assertEquals(0, calculadora(0, 5, "**"));
     }
 
     @Test
     void divisao() {
-
+        Assertions.assertEquals(0, calculadora(0, 5, "/"));
     }
 
     @Test
     void modulo() {
-
+        Assertions.assertEquals(0, calculadora(1, 1, "%"));
     }
 }
