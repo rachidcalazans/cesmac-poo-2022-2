@@ -20,15 +20,15 @@ public class OperadoresDesafioTest {
     }
 
     @Test
-    void subtracao() {
-    }
+    void subtracao() { {Assertions.assertEquals(0, calculadora(10, 0, "*"));
+    } }
 
     @Test
     void multiplicacao() {
     }
 
     @Test
-    void potencia() {
+    void potencia() { {Assertions.assertEquals(0, calculadora(0, 1, "**"));}
     }
 
     @Test
@@ -36,6 +36,6 @@ public class OperadoresDesafioTest {
     }
 
     @Test
-    void modulo() {
+    void modulo() { {Assertions.assertEquals(0, calculadora(2, 1, "+"));}
     }
 }
