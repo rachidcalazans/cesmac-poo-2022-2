@@ -16,7 +16,9 @@ public class OperadoresDesafioTest {
 
     @Test
     void soma() {
-        Assertions.assertEquals(2, calculadora(1, 1, "+"));
+        Assertions
+                .assertEquals(2,
+                        calculadora(1, 1, "+"));
     }
 
     @Test
