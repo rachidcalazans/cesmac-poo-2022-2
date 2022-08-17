@@ -52,19 +52,20 @@ public class TipoVariavelExercicioTest {
     void exercicio05() {
         int[] intArray = new int[4];
 
-        String nomes[] = {"Zé", "Roberto", "Mara", "Joana"};
+        String nomes[] = {"Zé", "Roberto", "Maria", "Joana"};
 
-        Assertions.assertEquals(2, intArray.length);
+        Assertions.assertEquals(4, intArray.length);
 
         Assertions.assertEquals(4, nomes.length);
         Assertions.assertEquals("Zé", nomes[0]);
         Assertions.assertEquals("Roberto", nomes[1]);
         Assertions.assertEquals("Maria", nomes[2]);
-        Assertions.assertEquals("Joana", nomes[4]);
+        Assertions.assertEquals("Joana", nomes[3]);
 
         List<String> nomes2 = new ArrayList<String>() {
             {
                 add("Zé");
+                add("Roberto");
             }
         };
         Assertions.assertEquals(2, nomes2.size());
@@ -72,10 +73,12 @@ public class TipoVariavelExercicioTest {
         Assertions.assertEquals("Roberto", nomes2.get(1));
 
         List<String> nomes3 = new ArrayList<String>();
+        List<String> nomes4 = new ArrayList<String>();
         nomes3.add("Maria");
+        nomes3.add("Joana");
 
         Assertions.assertEquals(2, nomes3.size());
-        Assertions.assertEquals("Maria", nomes3);
-        Assertions.assertEquals("Joana", nomes3);
+        Assertions.assertEquals("Maria", nomes3.get(0));
+        Assertions.assertEquals("Joana", nomes3.get(1));
     }
 }
