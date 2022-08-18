@@ -10,8 +10,8 @@ public class TipoVariavelExercicioTest {
         boolean boolean1 = false;
         Boolean boolean2 = true;
 
-        Assertions.assertEquals(true, boolean1);
-        Assertions.assertEquals(false, boolean2);
+        Assertions.assertEquals(false, boolean1);
+        Assertions.assertEquals(true, boolean2);
 
         Assertions.assertNotEquals(boolean1, boolean2);
     }
@@ -19,7 +19,7 @@ public class TipoVariavelExercicioTest {
     @Test
     void exercicio02() {
         int inteiro = 2;
-        Integer inteiro2 = 3;
+        Integer inteiro2 = 2;
 
         Assertions.assertEquals(inteiro, inteiro2);
         Assertions.assertEquals(inteiro2, inteiro2.intValue());
@@ -28,11 +28,11 @@ public class TipoVariavelExercicioTest {
 
     @Test
     void exercicio03() {
-        float flutuante = 1.1f;
-        Float flutuante2 = 1.0F;
+        float flutuante = 1.0f;
+        Float flutuante2 = 1.1F;
 
         double flutuante3 = 1.0;
-        Double flutuante4 = 1.1;
+        Double flutuante4 = 1.0;
 
         Assertions.assertNotEquals(flutuante, flutuante2);
         Assertions.assertEquals(flutuante, flutuante3);
@@ -41,30 +41,31 @@ public class TipoVariavelExercicioTest {
 
     @Test
     void exercicio04() {
-        String string1 = "Uma nova string";
-        String string2 = "Uma outra string" + "com" + "oncatenação";
+        String string1 = "Uma nova string!";
+        String string2 = "Uma outra string" + " com " + "concatenação";
 
         Assertions.assertEquals("Uma nova string!", string1);
-        Assertions.assertEquals("Uma outra string com oncatenação", string2);
+        Assertions.assertEquals("Uma outra string com concatenação", string2);
     }
 
     @Test
     void exercicio05() {
         int[] intArray = new int[4];
 
-        String nomes[] = {"Zé", "Roberto", "Mara", "Joana"};
+        String nomes[] = {"Zé", "Roberto", "Maria", "Joana"};
 
-        Assertions.assertEquals(2, intArray.length);
+        Assertions.assertEquals(4, intArray.length);
 
         Assertions.assertEquals(4, nomes.length);
         Assertions.assertEquals("Zé", nomes[0]);
         Assertions.assertEquals("Roberto", nomes[1]);
         Assertions.assertEquals("Maria", nomes[2]);
-        Assertions.assertEquals("Joana", nomes[4]);
+        Assertions.assertEquals("Joana", nomes[3]);
 
         List<String> nomes2 = new ArrayList<String>() {
             {
                 add("Zé");
+                add("Roberto");
             }
         };
         Assertions.assertEquals(2, nomes2.size());
@@ -73,9 +74,10 @@ public class TipoVariavelExercicioTest {
 
         List<String> nomes3 = new ArrayList<String>();
         nomes3.add("Maria");
+        nomes3.add("Joana");
 
         Assertions.assertEquals(2, nomes3.size());
-        Assertions.assertEquals("Maria", nomes3);
-        Assertions.assertEquals("Joana", nomes3);
+        Assertions.assertEquals("Maria", nomes3.get(0));
+        Assertions.assertEquals("Joana", nomes3.get(1));
     }
 }
