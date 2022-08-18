@@ -4,4 +4,4 @@
 2. Atualize esse arquivo com seu nome completo e número de matrícula
 2. Crie um novo Pull Request
 
-## [Matheus Cavalcanti] [2113970227]
+## [Ian Rapini] [2113971560]

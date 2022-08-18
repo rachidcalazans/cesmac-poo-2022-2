@@ -75,7 +75,9 @@ Repositório focado para turma de POO - Cesmac - 2022.2
 6. Comando para dizer que o código está pronto para ser enviado. Será feito um `commit` do código
   - `git commit -m "Messagem do que você fez"`
 7. Agora seu código está pronto para ser enviado para o Github. Comando para enviar
-  - `git push`
+  - `git push -u origin rachid/exercicio01`
+    - Lembrar de trocar `rachid/exercicio01` pelo nome da sua branch
+
 
 ### Criando Pull Request da nova branch
 
@@ -86,3 +88,23 @@ Repositório focado para turma de POO - Cesmac - 2022.2
 5. Coloque uma descrição do Pull Request
 6. Clique no botão  "Criar Pull Request"
 7. Pronto, agora seu Pull Request foi criado e poderá ser revisado por outros desenvolvedores
+
+## Setup
+
+1. Adicionar o JDK no projeto
+   - Ele é responsável por compilar o código em Java
+   - ![img.png](imgs/img.png)
+   - ![img_1.png](imgs/img_1.png)
+   - Selecionar o JDK versão 18
+   - ![img_2.png](imgs/img_2.png)
+2. Toda pasta de `test` deverá ser marcada como `Tests Source Root`
+   1. ![img_3.png](imgs/img_3.png)
+   2. Clicar com botão direito e marcar como `Tests Source Root`
+   3. ![img_4.png](imgs/img_4.png)
+3. Para adicionar o JUnit - framework de teste
+   1. Se no teste o `@Test` ou `Assertions.assertEquals` em vermelho, significa que o JUnit ainda não foi importado ou adicionado no projeto
+   2. ![img_5.png](imgs/img_5.png)
+   3. Clicar na lâmpada vermelha e selecionar a opção para adicionar o JUnit 5.8.1 no classpath
+   4. ![img_6.png](imgs/img_6.png)
+   5. Lembrar de marcar para fazer o Download
+   6. ![img_7.png](imgs/img_7.png)
