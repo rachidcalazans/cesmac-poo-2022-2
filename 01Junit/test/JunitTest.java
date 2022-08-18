@@ -7,11 +7,13 @@ public class JunitTest {
     void primeiroTesteSucesso() {
         // primeiro é a expectativa
         // segundo é o resultado
-        Assertions.assertEquals(true, 1 == 1);
+        String nome = "carlos";
+        Assertions.assertEquals(nome, "carlos");
     }
 
     @Test
     void segundoTesteFalha() {
-        Assertions.assertEquals(true, 1 == 2);
+        String nome = "carlos";
+        Assertions.assertEquals(nome, "joao");
     }
 }
