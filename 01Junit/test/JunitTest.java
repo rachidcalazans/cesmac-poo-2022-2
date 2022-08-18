@@ -1,4 +1,4 @@
-// Importando classes da biblioteca do JUnit que foi instalada dentro da pasta lib
+package test;// Importando classes da biblioteca do JUnit que foi instalada dentro da pasta lib
 import org.junit.jupiter.api.Assertions; // Libera métodos para assertividades como `Assertions.assertEquals`
 import org.junit.jupiter.api.Test; // Libera métodos gerais para testes, assim como a anotação `@Test`
 
