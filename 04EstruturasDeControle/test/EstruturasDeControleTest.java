@@ -42,7 +42,7 @@ public class EstruturasDeControleTest {
         int resultadoFinal = 0;
 
         do {
-            System.out.println("Executando algo");
+            System.out.println("Executando algo:");
             System.out.println(i);
 
             i++;
