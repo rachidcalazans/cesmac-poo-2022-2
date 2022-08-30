@@ -10,7 +10,7 @@ public class OperadoresExercicioTest {
     void exercicio01() {
         int i1 = 1, i2 = 2;
 
-        Assertions.assertEquals(4, i1 + i2);
+        Assertions.assertEquals(4, (double)i1 + i2);
         Assertions.assertEquals(0.5, i2 - i1);
         Assertions.assertEquals(-2, i2 * i1);
         Assertions.assertEquals(5, i1 / i2);
