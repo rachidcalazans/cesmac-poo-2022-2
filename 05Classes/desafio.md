@@ -1,6 +1,8 @@
 # Desafio
 Vale 2 pontos para P2. Válido se criar PR até 14/09/2022 23:59:59
 
+Criar testes para os todos os métodos
+
 ## Criar classe Pessoa
 
 #### Atributos
