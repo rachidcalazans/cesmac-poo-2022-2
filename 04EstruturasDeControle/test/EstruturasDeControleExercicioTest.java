@@ -9,8 +9,6 @@ public class EstruturasDeControleExercicioTest {
      * TODO
      * ----------------- */
 
-    String mesPor
-
     @Test
     void mesesAno(){
         int mes = 1;
