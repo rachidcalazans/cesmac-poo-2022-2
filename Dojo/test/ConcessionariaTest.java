@@ -10,5 +10,9 @@ public class ConcessionariaTest {
         Assertions.assertEquals(00,00);
     }
     @Test
-    void VendaCarro
+    void VendaCarro() {
+        Carro carro = new Carro("Corolla", 150.00);
+        Assertions.assertEquals("Corolla", carro.getModelo());
+        Assertions.assertEquals(150, carro.getPreco());
+    }
 }
