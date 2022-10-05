@@ -7,6 +7,10 @@ public class carrosTeste {
         Assertions.assertEquals("");
     }
 
+    @Test
+    void venda(){
+
+    }
 
 
 
