@@ -4,7 +4,7 @@ public class carros {
     private int saldo;
 }
 
-public class estoque {
-    public int quantidade;
+public class concessionaria {
+    public String estoque;
     return
 }

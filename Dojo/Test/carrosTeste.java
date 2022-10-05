@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 public class carrosTeste {
     @Test
     void estadoInicial(){
-        Assertions.assertEquals("");
+        Assertions.assertEquals(5, concessionaria.estadoInical);
     }
 
     @Test
