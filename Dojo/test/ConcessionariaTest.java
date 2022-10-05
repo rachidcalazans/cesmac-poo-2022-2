@@ -9,4 +9,6 @@ public class ConcessionariaTest {
 
         Assertions.assertEquals(00,00);
     }
+    @Test
+    void VendaCarro
 }
