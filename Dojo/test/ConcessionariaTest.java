@@ -1,10 +1,12 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class ConcessionariaTest {
 
     @Test
     void ConcessionariaTest(){
-        Saldo double =0;
+         double Saldo =0;
 
+        Assertions.assertEquals(00,00);
     }
 }
