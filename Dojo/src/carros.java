@@ -1,9 +1,10 @@
 public class carros {
-    public String veiculo;
-    public int preco;
-    public int saldo;
+    private String veiculo;
+    private int preco;
+    private int saldo;
 }
 
 public class estoque {
     public int quantidade;
+    return
 }
