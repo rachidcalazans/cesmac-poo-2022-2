@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 // Exercício:
 // - Fazer todos os testes passarem. Não é para alterar nada nesse arquivo de teste.
 // - Criar todos os métodos necessários
-public class FogaoExercicioTest {
+/*public class FogaoExercicioTest {
 
     @Test
     void construtorQuandoNaoPassaNenhumParametro() {
@@ -46,3 +46,5 @@ public class FogaoExercicioTest {
         Assertions.assertEquals(false, fogao.estaLigado());
     }
 }
+
+*/
