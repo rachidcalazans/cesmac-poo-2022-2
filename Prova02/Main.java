@@ -27,3 +27,16 @@ public final class Main {
         controller.sell(ProductType.MACA_VERDE, 2);
     }
 
+    private static void printInventory(ProductController controller) {
+        for (Map.Entry<ProductType, Product> entry : controller.getInventory().entrySet()) {
+            final String name = entry.getKey().getDisplayName();
+            final int amount = entry.getValue().getAmount();
+
+            System.out.format(
+                    "Há %s flau(s) do sabor %s disponíveis em estoque;",
+                    amount, name
+            ).println();
+        }
+    }
+
+}
