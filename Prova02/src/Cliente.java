@@ -3,6 +3,7 @@ public class Cliente {
     public String compraSabor;
     public Integer compraQtd;
     public Integer compraLucro;
+    public Integer valorEstoque;
     public String getNome(){
         return nome;
     }
@@ -19,5 +20,11 @@ public class Cliente {
         this.nome = nome;
         this.compraSabor = compraSabor;
         this.compraQtd = compraQtd;
+    }
+    public Integer alteraEstoque(){
+        return valorEstoque;
+    }
+    public void Compra(String compraSabor, Integer compraQtd){
+
     }
 }
