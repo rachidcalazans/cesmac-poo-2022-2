@@ -31,7 +31,7 @@ public class Product {
     }
 
     public void sell() {
-        if (amount == 0) throw new UnsupportedOperationException("Can't sell without the item in inventory.");
+        if (amount == 0) throw new UnsupportedOperationException("Não temos disponível no estoque.");
 
         setAmount(getAmount() - 1);
     }
