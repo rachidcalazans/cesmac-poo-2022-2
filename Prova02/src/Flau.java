@@ -1,22 +1,24 @@
 public class Flau{
     public String sabor;
     public Double valor;
-
+    public Integer estoque;
     public String getSabor() {
         return sabor;
     }
-
     public Double getValor() {
         return valor;
     }
-
-    public Flau(){
-        this.sabor = getSabor();
-        this.valor = getValor();
+    public Integer getEstoque() {
+        return estoque;
     }
-    public Flau(String sabor, Double valor){
+    /*public Flau(){
         this.sabor = getSabor();
         this.valor = getValor();
+    }*/
+    public Flau(String sabor, Double valor, Integer estoque){
+        this.sabor = sabor;
+        this.valor = valor;
+        this.estoque = estoque;
     }
 }
 
@@ -50,6 +52,5 @@ public class Flau{
             System.out.println("Estoque indisponivel");
         }
     }
-
 }
 */
