@@ -1,3 +1,4 @@
+/*
 public class Gato extends Animal {
 
     @Override
@@ -5,3 +6,5 @@ public class Gato extends Animal {
         return "miau";
     }
 }
+
+ */

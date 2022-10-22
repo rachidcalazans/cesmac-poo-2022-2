@@ -1,4 +1,4 @@
-public class Animal {
+/*public class Animal {
     // Atributos ou métodos privados não são herdados para as subclasses
     private String som = "Emitindo algum som...";
 
@@ -16,3 +16,5 @@ public class Animal {
         return "Andando..";
     }
 }
+
+ */
