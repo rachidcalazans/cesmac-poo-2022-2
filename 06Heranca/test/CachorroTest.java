@@ -4,15 +4,15 @@ import org.junit.jupiter.api.Test;
 public class CachorroTest {
     @Test
     void emitirSom() {
-//        CachorroImplementacao cachorro = new CachorroImplementacao();
-//
-//        Assertions.assertEquals("Au au", cachorro.emitirSom());
+        Cachorro cachorro = new Cachorro();
+
+        Assertions.assertEquals("Au au", cachorro.emitirSom());
     }
 
     @Test
     void movimentar() {
-//        CachorroImplementacao cachorro = new CachorroImplementacao();
-//
-//        Assertions.assertEquals("Correndo...", cachorro.movimentar());
+        Cachorro cachorro = new Cachorro();
+
+        Assertions.assertEquals("Correndo...", cachorro.movimentar());
     }
 }
