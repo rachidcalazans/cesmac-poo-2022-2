@@ -21,3 +21,7 @@ O que precisar
 1. List<Pessoa> pessoas() -> Listagem de pessoas
 2. void addPessoa(Pessoa pessoa) -> Adiciona pessoa
 3. Pessoa getPessoaPeloNomeCompleto(String nomeCompleto) -> Retorna uma pessoa filtrada pelo nome completo
+
+
+
+public class
