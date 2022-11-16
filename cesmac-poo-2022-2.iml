@@ -16,6 +16,8 @@
       <sourceFolder url="file://$MODULE_DIR$/07Abstrata/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/08Interface/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/08Interface/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Prova03/ResoluçaoProva3" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Prova03/ResoluçãoProva03" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
