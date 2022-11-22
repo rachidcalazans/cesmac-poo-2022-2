@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class TextReaderPOJO {
+public class TextReader {
 
     public List<String> getLines() {
         final List<String> lines = new ArrayList<>();
