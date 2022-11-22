@@ -6,7 +6,7 @@ public class TextReaderPOJO {
     public List<String> getLines() {
         final List<String> lines = new ArrayList<>();
         final String dir = System.getProperty("user.dir");
-        final File proposals = new File(dir, "proposals.txt");
+        final File proposals = new File(dir, "cesmac-poo-2022-2/Prova03/proposals.txt");
 
         BufferedReader bufferedReader = null;
         try {
