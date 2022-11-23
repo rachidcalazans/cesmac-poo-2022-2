@@ -38,7 +38,7 @@ public class Cronograma {
         final List<String> lines = getLines();
 
         for (String line : lines) {
-            final String[] words = line.split(" ");
+            final String[] words = line.split("  ");
             final String last = words[words.length - 1];
 
             int duration;
