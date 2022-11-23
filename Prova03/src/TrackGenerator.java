@@ -7,7 +7,7 @@ public class TrackGenerator {
     private final Map<String, Integer> proposals;
 
     public TrackGenerator() {
-        this.proposals = new TextReaderPOJO().convertToMap();
+        this.proposals = new Leitor().convertToMap();
     }
 
     public void printTracks() {
