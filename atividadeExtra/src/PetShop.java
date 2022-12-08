@@ -13,7 +13,7 @@ public final class PetShop {
         for (Task task : controller.getTasks()) {
             System.out
             .format(
-                    "Procedimento de %s, no pet %s, R$ %s",
+                    "O Procedimento de %s, no pet %s, R$ %s",
                     task.getType().getName(),
                     task.getName(),
                     task.getPrice()
