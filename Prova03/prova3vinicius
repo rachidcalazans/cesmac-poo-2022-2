@@ -1,0 +1,142 @@
+public class Main {
+
+    public static void main(String[] args) {
+        final TrackGenerator generator = new TrackGenerator();
+
+        generator.printTracks();
+    }
+
+}
+import java.io.*;
+import java.util.*;
+
+public class TextReaderPOJO {
+
+    public List<String> getLines() {
+        final List<String> lines = new ArrayList<>();
+        final String dir = System.getProperty("user.dir");
+        final File proposals = new File(dir, "proposals.txt");
+
+        BufferedReader bufferedReader = null;
+        try {
+            bufferedReader = new BufferedReader(new FileReader(proposals));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+
+            return lines;
+        }
+
+        String line;
+        try {
+            while ((line = bufferedReader.readLine()) != null) {
+                if (line.length() == 0) continue;
+
+                lines.add(line);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return lines;
+    }
+
+    public LinkedHashMap<String, Integer> convertToMap() {
+        final Map<String, Integer> map = new HashMap<>();
+        final List<String> lines = getLines();
+
+        for (String line : lines) {
+            final String[] words = line.split(" ");
+            final String last = words[words.length - 1];
+
+            int duration;
+
+            if (last.equalsIgnoreCase("lightning")) {
+                duration = 5;
+            } else {
+                duration = Integer.parseInt(last.replace("min", ""));
+            }
+
+            map.put(String.join(" ", Arrays.copyOf(words, words.length - 1)), duration);
+        }
+
+        final List<Map.Entry<String, Integer>> list = new ArrayList<>(map.entrySet());
+
+        list.sort(Map.Entry.comparingByValue());
+
+        final LinkedHashMap<String, Integer> values = new LinkedHashMap<>();
+
+        for (int i = list.size() - 1; i >= 0; i--) {
+            final Map.Entry<String, Integer> entry = list.get(i);
+
+            values.put(entry.getKey(), entry.getValue());
+        }
+
+        return values;
+    }
+
+}
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class TrackGenerator {
+
+    private final Map<String, Integer> proposals;
+
+    public TrackGenerator() {
+        this.proposals = new TextReaderPOJO().convertToMap();
+    }
+
+    public void printTracks() {
+        final String[] letter = new String[] { "A", "B", "C", "D" };
+        final List<Map.Entry<String, Integer>> entries = new ArrayList<>(proposals.entrySet());
+
+        int trackPos = 0;
+        int proposalHit = 0;
+        int current = 540;
+        boolean hasInitialPrint = false;
+
+        while (proposalHit < proposals.size() - 1) {
+            proposalHit++;
+
+            if (!hasInitialPrint) {
+                System.out.format("### %s ###", letter[trackPos]).println();
+
+                hasInitialPrint = true;
+            }
+
+            final Map.Entry<String, Integer> entry = entries.get(proposalHit);
+
+            System.out.format("%s - %s", numberAsHour(current), entry.getKey()).println();
+
+            current += entry.getValue();
+
+            if (current == 720) {
+                current += 60;
+
+                System.out.println("12:00 - Almoço");
+            }
+
+            if (current == 1020) {
+                System.out.println("17:00 - Evento de Networking\n");
+
+                hasInitialPrint = false;
+
+                current = 540;
+                trackPos++;
+            }
+        }
+
+        if (current < 1020 && proposalHit == proposals.size() - 1) {
+            System.out.println("17:00 - Evento de Networking");
+        }
+    }
+
+    public String numberAsHour(int number) {
+        final int hour = number / 60;
+        final int minutes = number % 60;
+
+        return (hour < 10 ? "0" + hour : hour) + ":" + (minutes < 10 ? "0" + minutes : minutes);
+    }
+
+}
